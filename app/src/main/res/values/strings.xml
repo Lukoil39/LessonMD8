@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LessonMD8</string>
+    <string name="first_button">Просто первая кнопка</string>
+    <string name="second_button">Просто вторая кнопка</string>
+    <string name="third_button">Просто третья кнопка</string>
+    <string name="fourth_button">Просто четвёртая кнопка</string>
+    <string name="fifth_button">Просто пятая кнопка</string>
+    <string name="one_button">Просто первая кнопка</string>
+    <string name="two_button">Просто вторая кнопка</string>
+    <string name="three_button">Просто третья кнопка</string>
+    <string name="four_button">Просто четвёртая кнопка</string>
+    <string name="five_button">Просто пятая кнопка</string>
+    <string name="blue">blue</string>
+    <string name="red">red</string>
+    <string name="standard">standard</string>
+</resources>

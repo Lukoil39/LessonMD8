@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        style="@style/DarkTextStyle"
+        android:layout_width="298dp"
+        android:text="@string/first_button" />
+
+    <Button
+        style="@style/DarkTextStyle"
+        android:layout_width="304dp"
+        android:text="@string/second_button" />
+
+    <Button
+        style="@style/DarkTextStyle"
+        android:layout_width="306dp"
+        android:text="@string/third_button" />
+
+    <Button
+        style="@style/DarkTextStyle"
+        android:text="@string/fourth_button" />
+
+    <Button
+        style="@style/DarkTextStyle"
+        android:layout_width="311dp"
+        android:text="@string/fifth_button" />
+</LinearLayout>
