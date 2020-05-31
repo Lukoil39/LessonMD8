@@ -13,6 +13,10 @@ public class MainActivity extends AppCompatActivity {
 
     private int themeNumber;
 
+    private void initActivity() {
+        setContentView(R.layout.activity_main);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,9 +42,19 @@ public class MainActivity extends AppCompatActivity {
         initActivity();
     }
 
-    private void initActivity() {
-        setContentView(R.layout.activity_main);
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(EXTRA_THEME, themeNumber);
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -60,20 +74,6 @@ public class MainActivity extends AppCompatActivity {
         }
         recreate();
         return super.onOptionsItemSelected(item);
-    }
-
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putInt(EXTRA_THEME, themeNumber);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
     }
 
 }
